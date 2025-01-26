@@ -3,7 +3,7 @@
 
 # This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
 # docker build -t blog_api .
-# docker run -d -p 80:80 -e RAILS_MASTER_KEY=<value from config/master.key> --name blog_api blog_api
+# docker run -d -p 80:80 -e RAILS_MASTER_KEY=248dc3ba6d51f685b19bd65a51a02cc4 --name blog_api blog_api
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
