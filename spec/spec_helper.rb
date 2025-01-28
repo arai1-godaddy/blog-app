@@ -13,6 +13,28 @@
 # it.
 #
 # See https://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
+require 'simplecov'
+SimpleCov.start 'rails' do
+  # add_filter '/bin/'
+  # add_filter '/db/'
+  # add_filter '/spec/'
+  # add_filter '/test/'
+  # add_filter '/config/'
+  # add_filter '/app/channels/'
+  # add_filter '/app/jobs/'
+  # add_filter '/app/mailers/'
+  # add_filter '/app/helpers/'
+  # add_filter '/app/controllers/'
+  # add_filter '/app/views/'
+  # add_filter '/app/models/application_record.rb'
+  add_filter 'Dockerfile'
+  add_filter 'Gemfile'
+  add_filter 'Gemfile.lock'
+  add_filter 'Rakefile'
+  add_filter 'config.ru'
+  
+end
+
 RSpec.configure do |config|
   # rspec-expectations config goes here. You can use an alternate
   # assertion/expectation library such as wrong or the stdlib/minitest
