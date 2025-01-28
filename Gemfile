@@ -49,7 +49,7 @@ group :development, :test do
 
   gem 'rspec-rails', '~> 7.1'
 
-  gem 'simplecov', '~> 0.21.0'
+  gem 'simplecov', '~> 0.22.0'
 end
 
 
